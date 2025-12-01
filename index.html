@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archivos de Bronconeumología</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #003049;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #003049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        table th {
+            background: #003049;
+            color: white;
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #003049;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .download-btn:hover {
+            background: #005f73;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ARCHIVOS DE BRONCONEUMOLOGÍA</h1>
+    <p>Información – Análisis – Datos Hospitalarios</p>
+</header>
+
+<div class="container">
+
+    <h2>Enfermedades Respiratorias</h2>
+    <p>
+        Las enfermedades respiratorias representan una de las principales causas de morbilidad y mortalidad a nivel mundial, y constituyen un desafío creciente para los sistemas de salud. Su incidencia aumenta de forma constante debido a factores como el envejecimiento de la población, la exposición al humo del tabaco, las condiciones ambientales y climáticas, la contaminación, así como el incremento de enfermedades crónicas como la obesidad. Estas patologías generan una elevada carga sanitaria, no solo por su frecuencia, sino también por la complejidad de su atención clínica y el uso intensivo de recursos hospitalarios.
+    </p>
+    <p>
+        Contar con información objetiva y sistemática sobre la carga asistencial de las enfermedades respiratorias es esencial para mejorar la planificación y evaluación de los servicios de salud. Los registros hospitalarios y bases de datos clínicas permiten analizar tendencias, identificar factores de riesgo, evaluar la calidad de la atención y medir la evolución de los pacientes. Dentro de estas fuentes, los datos hospitalarios incluidos en esta página poseen un valor fundamental, ya que registran información detallada sobre diagnósticos, procedimientos, comorbilidades, mortalidad, reingresos y desempeño hospitalario.
+    </p>
+    <p>
+        La información recopilada en bases de datos clínicas permite no solo estudiar enfermedades como neumonía, fallo cardiaco o insuficiencia respiratoria, sino también comprender el impacto de procedimientos médicos, evaluar tasas de supervivencia y analizar el comportamiento epidemiológico de diversas patologías a lo largo del tiempo. Gracias al tamaño y diversidad de los registros, su análisis también se alinea con enfoques de big data aplicados a la salud, permitiendo una visión amplia y precisa sobre la morbilidad, los resultados clínicos y la seguridad del paciente.
+    </p>
+    <p>
+        En este contexto, la base de datos presentada constituye una herramienta útil para la investigación, la gestión sanitaria y la toma de decisiones, brindando información valiosa sobre la atención hospitalaria y las principales enfermedades respiratorias estudiadas.
+    </p>
+
+    <h2>Información de la Base de Datos</h2>
+    <p>La base de datos analizada contiene un total de <strong>18.045 registros</strong> y <strong>8 variables</strong>, relacionadas con actividad hospitalaria y estado de los pacientes.</p>
+
+    <h3>Estructura de las Variables</h3>
+    <ul>
+        <li><strong>Fecha.Inicio:</strong> Fecha de inicio del registro.</li>
+        <li><strong>Fecha.Final:</strong> Fecha de finalización.</li>
+        <li><strong>Condado:</strong> Localización del hospital.</li>
+        <li><strong>Hospital:</strong> Centro médico donde se atendió al paciente.</li>
+        <li><strong>Procedimientos y Condiciones:</strong> Diagnóstico o intervención realizada.</li>
+        <li><strong>Tasa de Riesgo:</strong> Indicador numérico asociado al riesgo clínico.</li>
+        <li><strong>Rating del Hospital:</strong> Calificación del desempeño hospitalario.</li>
+        <li><strong>Estado del Paciente:</strong> 0 = Vivo, 1 = Fallecido.</li>
+    </ul>
+
+    <h2>Vista Previa de la Base de Datos</h2>
+    <p>Se muestran algunas filas representativas del archivo:</p>
+
+    <table>
+        <tr>
+            <th>Fecha.Inicio</th>
+            <th>Fecha.Final</th>
+            <th>Condado</th>
+            <th>Hospital</th>
+            <th>Procedimientos</th>
+            <th>Tasa</th>
+            <th>Rating</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td>9/27/2013</td>
+            <td>6/29/2024</td>
+            <td>Alameda</td>
+            <td>Alameda Hospital</td>
+            <td>Carotid Endarterectomy</td>
+            <td>0</td>
+            <td>Esperado</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>3/31/2020</td>
+            <td>2/8/2024</td>
+            <td>Alameda</td>
+            <td>Alameda Hospital</td>
+            <td>Heart Failure</td>
+            <td>2.5</td>
+            <td>Esperado</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>4/26/2015</td>
+            <td>7/2/2017</td>
+            <td>Alameda</td>
+            <td>Alameda Hospital</td>
+            <td>AMI</td>
+            <td>5.3</td>
+            <td>Esperado</td>
+            <td>0</td>
+        </tr>
+            <tr>
+            <td>5/10/2018</td>
+            <td>8/14/2021</td>
+            <td>Alameda</td>
+            <td>Alameda Hospital</td>
+            <td>Pneumonia</td>
+            <td>3.1</td>
+            <td>Mejor de lo Esperado</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>11/02/2016</td>
+            <td>4/19/2020</td>
+            <td>Alameda</td>
+            <td>Alameda Hospital</td>
+            <td>Heart Transplant</td>
+            <td>7.9</td>
+            <td>Peor de lo Esperado</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1/18/2019</td>
+            <td>9/22/2023</td>
+            <td>Alameda</td>
+            <td>Alameda Hospital</td>
+            <td>Sepsis</td>
+            <td>4.4</td>
+            <td>Esperado</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>6/30/2014</td>
+            <td>3/05/2016</td>
+            <td>Alameda</td>
+            <td>Alameda Hospital</td>
+            <td>Stroke</td>
+            <td>6.2</td>
+            <td>Peor de lo Esperado</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>7/12/2020</td>
+            <td>10/30/2021</td>
+            <td>Alameda</td>
+            <td>Alameda Hospital</td>
+            <td>Respiratory Failure</td>
+            <td>3.9</td>
+            <td>Esperado</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>2/28/2017</td>
+            <td>6/11/2019</td>
+            <td>Alameda</td>
+            <td>Alameda Hospital</td>
+            <td>Pancreatic Cancer</td>
+            <td>8.7</td>
+            <td>Peor de lo Esperado</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>10/14/2015</td>
+            <td>1/26/2018</td>
+            <td>Alameda</td>
+            <td>Alameda Hospital</td>
+            <td>Hip Replacement</td>
+            <td>1.2</td>
+            <td>Mejor de lo Esperado</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>9/07/2021</td>
+            <td>5/18/2023</td>
+            <td>Alameda</td>
+            <td>Alameda Hospital</td>
+            <td>COVID-19 Severe</td>
+            <td>9.4</td>
+            <td>Peor de lo Esperado</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <h2>Descargar Base de Datos</h2>
+    <p>Puedes descargar el archivo original haciendo clic en el siguiente botón:</p>
+
+    <a class="download-btn" href="#" download>⬇ Descargar Base de Datos (.xlsx)</a>
+
+</div>
+
+</body>
+</html>
